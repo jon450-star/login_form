@@ -1,0 +1,242 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    background: linear-gradient(#21C08B, #AB88FF);
+
+}
+
+
+/*------------HEADER ----------------*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    min-width: 600px;
+
+}
+header .header__div{
+    width: 50vw;
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 15px;
+
+}
+.header .header__div .header__div--img{
+    width: 13rem;
+    height: 13rem;
+}
+header .header__menu{
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+header .header__menu .header__menu--profile{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .header__menu .header__menu--profile img{
+    margin-right: 10px;
+}
+header .header__menu .header__menu--profile .header__menu--profile--perfil {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+header .header__menu .header__menu--profile .header__menu--profile--perfil p {
+    color: #fff;
+    font-size: 2rem;
+}
+.sub-menu{
+
+    display: none;
+}
+.header__menu--profile:hover .sub-menu{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 60px;
+}
+.header__menu--profile:hover .sub-menu .sub-menu__li a{
+    color: greenyellow;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+/*MAIN*/
+.login{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.login__container{
+    
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    height: 80vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login__container h2{
+    width: 400px;
+    text-align: left;
+    margin: 20px auto;
+    color:#fff;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    
+
+}
+
+.login__container--form{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.login__container--form .input{
+    height: 80px;
+    border-bottom: 2px solid #fff;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: transparent;
+    outline:none;
+    width: 400px;
+    color:#fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+input::placeholder{
+    color:#fff;
+}
+
+
+.login__container--form .boton{
+    border-radius: 20px;
+    margin-top: 15px;
+    height: 60px;
+    opacity: 3;
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    color:#fff;
+    font-size: 17px;
+    width: 300px;
+}
+
+.recuerdame{
+    margin-top: 15px;
+    height:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color:#fff;
+    width: 400px;
+
+}
+#contraseña{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+#contraseña:hover{
+    text-decoration: underline;
+
+
+}
+
+
+.login__container--social-media{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    
+}
+
+.login__container--register{
+    margin: 20px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 10vh;
+
+}
+
+.login__container--social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+
+
+}
+.login__container--social-media div{
+
+    display: flex;
+    align-items: center;
+    margin: 6px 0 ;
+    width: 400px;
+
+
+}
+
+.login__container--social-media div img{
+
+
+}
+
+/*-----------FOOTER------------------*/
+
+.footer{
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+}
+
+.footer a{
+    margin: 0 30px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+
+    text-decoration: underline;
+
+
+}
